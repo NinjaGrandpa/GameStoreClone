@@ -1,0 +1,75 @@
+﻿@page "/Redigera-Event/"
+@using GameStore.Client.HttpClientFolder;
+@using GameStore.Shared.Cascade;
+@using GameStore.Shared.DTO;
+@using GameStore.Shared.DataModels;
+@using Microsoft.AspNetCore.Authorization;
+@attribute [Authorize(Roles = "Administrator")]
+
+@inject PublicClient _client;
+@inject NavigationManager _navigationmanager;
+
+
+
+@if (_event != null)
+{
+
+    <EditForm Model="@_event">
+
+        <div class="mb-3">
+            <label class="form-label">Event id</label>
+            <Input class="form-control" id="eventId" value="@_event.Id" readonly />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Event namn</label>
+            <InputText class="form-control" id="eventName" @bind-Value="_event.EventName" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Datum</label>
+            <InputDate class="form-control" id="date" @bind-Value="_event.Date" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Pris</label>
+            <InputNumber class="form-control" id="price" @bind-Value="_event.Price" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Max antal platser</label>
+            <InputNumber class="form-control" id="maxAvailableSeats" @bind-Value="_event.MaxAvailableSeats" />
+        </div>
+        @*
+    <div class="mb-3">
+    <label class="form-label">Bild data</label>
+    <InputFile class="form-control" id="ImageData" @bind="@_event.ImageData" />
+    </div>*@
+        <div class="mb-3">
+            <label class="form-label">Allergier</label>
+            <InputText class="form-control" id="allergies" @bind-Value="_event.Allergies" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Address</label>
+            <InputText class="form-control" id="address" @bind-Value="_event.Address" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Postnummer</label>
+            <InputText class="form-control" id="postalCode" @bind-Value="_event.PostalCode" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Stad</label>
+            <InputText class="form-control" id="city" @bind-Value="_event.City" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Beskrivning av event</label>
+            <InputTextArea class="form-control" id="email" @bind-Value="_event.Description" />
+        </div>
+        
+        <div class="mb-3 d-flex justify-content-between">
+            <button type="submit" class="btn btn-success" @onclick="@(() => UpdateEvent())">Uppdatera event</button>
+            <button  type="submit" class="btn btn-danger "  @onclick="@(() => DeleteEvent())">Ta bort event</button>
+        </div>
+    </EditForm>
+}

@@ -1,0 +1,158 @@
+﻿<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">Admin Tools</a>
+        @*<button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+        <span class="navbar-toggler-icon"></span>
+        </button>*@
+    </div>
+</div>
+
+<div class="@*@NavMenuCssClass*@" @onclick="ToggleNavMenu">
+    <ul class="navbar-nav px-3">
+        <li class="nav-item dropdown show">
+            <NavLink class="nav-link dropdown-toggle  text-white" @onclick="() => expandOrderSubNavSettings = !expandOrderSubNavSettings" id="navbarDropdown">
+                <span class="oi oi-list-rich text-white" aria-hidden="true"></span> Ordrar
+            </NavLink>
+            @if (expandOrderSubNavSettings)
+            {
+            <li class="dropdown-menu show bg-dark" aria-labelledby="navbarDropdown">
+            <li class="nav-item mb-0 p-0">
+                <NavLink class="nav-link text-white" href="Se-Ordrar">
+                    <h6 class="px-1">Se alla ordrar</h6>
+                </NavLink>
+            </li>
+            </li>
+            }
+        </li>
+        <li class="nav-item dropdown show">
+            <NavLink class="nav-link dropdown-toggle  text-white" @onclick="() => expandUserSubNavSettings = !expandUserSubNavSettings" id="navbarDropdown">
+                <span class="oi oi-list-rich text-white" aria-hidden="true"></span> Användare
+            </NavLink>
+            @if (expandUserSubNavSettings)
+            {
+            <li class="dropdown-menu show bg-dark" aria-labelledby="navbarDropdown">
+            <li class="nav-item mb-0 p-0">
+                <NavLink class="nav-link text-white" href="Se-Anvandare">
+                    <h6 class="px-1">Se alla användare</h6>
+                </NavLink>
+            </li>
+            </li>
+            }
+        </li>
+        <li class="nav-item dropdown show">
+            <NavLink class="nav-link dropdown-toggle  text-white" @onclick="() => expandEventSubNavSettings = !expandEventSubNavSettings" id="navbarDropdown">
+                <span class="oi oi-list-rich text-white" aria-hidden="true"></span> Events
+            </NavLink>
+            @if (expandEventSubNavSettings)
+            {
+            <li class="dropdown-menu show bg-dark" aria-labelledby="navbarDropdown">
+            <li class="nav-item mb-0 p-0">
+                <NavLink class="nav-link text-white" href="Skapa-Event">
+                    <h6 class="px-1">Skapa nytt event</h6>
+                </NavLink>
+            </li>
+            <li class="nav-item mb-0 p-0">
+                <NavLink class="nav-link text-white" href="Se-Event">
+                    <h6 class="px-1">Se alla event</h6>
+                </NavLink>
+            </li>
+            </li>
+            }
+        </li>
+        <li class="nav-item dropdown show">
+            <NavLink class="nav-link dropdown-toggle  text-white" @onclick="() => expandShopCartsSubNavSettings = !expandShopCartsSubNavSettings" id="navbarDropdown">
+                <span class="oi oi-list-rich text-white" aria-hidden="true"></span> Påbörjade varukorgar
+            </NavLink>
+            @if (expandShopCartsSubNavSettings)
+            {
+            <li class="dropdown-menu show bg-dark" aria-labelledby="navbarDropdown">
+            <li class="nav-item mb-0 p-0">
+                <NavLink class="nav-link text-white" href="Se-Paborjade-Varukorgar">
+                    <h6 class="px-1">Se påbörjade varukorgar</h6>
+                </NavLink>
+            </li>
+            </li>
+            }
+        </li>
+        <li class="nav-item dropdown show">
+            <NavLink class="nav-link dropdown-toggle  text-white" @onclick="() => expandProductSubNavSettings = !expandProductSubNavSettings" id="navbarDropdown">
+                <span class="oi oi-list-rich text-white" aria-hidden="true"></span> Produkter
+            </NavLink>
+            @if (expandProductSubNavSettings)
+            {
+            <li class="dropdown-menu show bg-dark" aria-labelledby="navbarDropdown">
+            <li class="nav-item mb-0 p-0">
+                <NavLink class="nav-link text-white" href="Se-Produkter">
+                    <h6 class="px-1">Se alla Produkter</h6>
+                </NavLink>
+            </li>
+            <li class="nav-item mb-0 p-0">
+                <NavLink class="nav-link text-white" href="Skapa-Produkt">
+                    <h6 class="px-1">Lägg till ny produkt</h6>
+                </NavLink>
+            </li>
+            </li>
+            }
+        </li>
+        <li class="nav-item dropdown show">
+            <NavLink class="nav-link dropdown-toggle  text-white" @onclick="() => expandHighlightSubNavSettings = !expandHighlightSubNavSettings" id="navbarDropdown">
+                <span class="oi oi-list-rich text-white" aria-hidden="true"></span> Highlights
+            </NavLink>
+            @if (expandHighlightSubNavSettings)
+            {
+            <li class="dropdown-menu show bg-dark" aria-labelledby="navbarDropdown">
+            <li class="nav-item mb-0 p-0">
+                <NavLink class="nav-link text-white" href="Skapa-Highlight">
+                    <h6 class="px-1">Lägg till ny highlight</h6>
+                </NavLink>
+            </li>
+
+            <li class="nav-item mb-0 p-0">
+                <NavLink class="nav-link text-white" href="Uppdatera-Highlight">
+                    <h6 class="px-1">Redigera highlight</h6>
+                </NavLink>
+            </li>
+            </li>
+            }
+        </li>
+    </ul>
+</div>
+
+
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private bool expandOrderSubNavSettings, expandUserSubNavSettings, expandEventSubNavSettings, expandShopCartsSubNavSettings, expandProductSubNavSettings, expandHighlightSubNavSettings;
+
+    void ToggleNavMenu()
+    {
+        if (!expandOrderSubNavSettings)
+        {
+            collapseNavMenu = !collapseNavMenu;
+        }
+        if (!expandUserSubNavSettings)
+        {
+            collapseNavMenu = !collapseNavMenu;
+        }
+        if (!expandEventSubNavSettings)
+        {
+            collapseNavMenu = !collapseNavMenu;
+        }
+        if (!expandShopCartsSubNavSettings)
+        {
+            collapseNavMenu = !collapseNavMenu;
+        }
+        if (!expandProductSubNavSettings)
+        {
+            collapseNavMenu = !collapseNavMenu;
+        }
+        if (!expandHighlightSubNavSettings)
+        {
+            collapseNavMenu = !collapseNavMenu;
+        }
+
+    }
+}

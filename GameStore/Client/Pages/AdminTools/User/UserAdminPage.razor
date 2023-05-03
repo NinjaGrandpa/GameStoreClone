@@ -1,0 +1,43 @@
+﻿@page "/admin/user"
+@using GameStore.Shared.Cascade;
+@using GameStore.Shared.DTO;
+@using System.Collections;
+@using GameStore.Client.HttpClientFolder;
+@using Microsoft.AspNetCore.Authorization;
+
+@attribute [Authorize(Roles = "Administrator")]
+@inject PublicClient _client;
+
+<h3>Alla användare</h3>
+
+
+@if (AllUsers != null && AllUsers.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Namn</th>
+                <th>Email</th>
+                <th>Telefonnummer</th>
+                <th> </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var _user in AllUsers)
+            {
+                <tr>
+                    <td>@_user.Id</td>
+                    <td>@_user.FirstName @_user.LastName</td>
+                    <td>@_user.Email</td>
+                    <td>@_user.PhoneNumber</td>
+                    <td><a href="" @onclick="(() => ChangeIdToSelectedUser(_user.Id))" class=" btn btn-dark">Se alla uppgifter</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Laddar in alla användare...</p>
+}

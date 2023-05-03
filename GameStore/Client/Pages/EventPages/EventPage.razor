@@ -1,0 +1,126 @@
+﻿@using Microsoft.AspNetCore.Components.QuickGrid
+@using GameStore.Client.HttpClientFolder
+@inject PublicClient _client
+@inject NavigationManager NavigationManager
+
+@page "/event"
+
+<PageTitle>Event</PageTitle>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+<link href="https://fontawesome.com/search?q=date&o=r&m=free" rel="stylesheet" />
+
+<div class="col-12">
+
+    <div class="col-12 m-0 p-0 position-relative" style="display: block; height: 120%; top: 0 !important;">
+
+        <img class="img-fluid p-0" src="Images/BgLanSida.png" style="background-color: black; opacity: 0.98;" />
+
+
+        <div class="col-12 img-fluid" style="display: inline-block; position: absolute; top: 60%; left: 0%;">
+            @if (AllEventsList is not null)
+            {
+                <div class=" row col-lg-12" style="justify-content: center">
+                    <div class="card col-lg-3 col-md-3 col-sm-12 mx-5 p-0" style="width: 300px; height: 200px; background-color: black; opacity: 0.7">
+                        <h4 class="card-header" style="color: white; opacity: 1!important;">@AllEventsList.ElementAtOrDefault(0).EventName</h4>
+                        <div class="card-body justify-content-center align-items-center py-0">
+                            <p class="my-4" style="color: white; opacity: 1 !important;"><i class="fa-regular fa-clock"></i>@AllEventsList.ElementAtOrDefault(0).Date</p>
+                            <div class="my-1" style="text-align: center; opacity: 1 !important;">
+                                <button class="btn btn-info" @onclick="(() => SetEventInFocusAndOpenEventModal(AllEventsList.ElementAtOrDefault(0)))" style="opacity: 1 !important;">Mer information</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card col-lg-3 col-md-3 col-sm-12  mx-5 p-0" style="width: 300px; height: 200px; background-color: black; opacity: 0.6">
+                        <h4 class="card-header" style="color: white">@AllEventsList.ElementAtOrDefault(1).EventName</h4>
+                        <div class="card-body py-0">
+                            <p class="my-4" style="color: white">@AllEventsList.ElementAtOrDefault(1).Date</p>
+                            <div class="my-1" style="text-align: center">
+                                <button class="btn btn-info" @onclick="(() => SetEventInFocusAndOpenEventModal(AllEventsList.ElementAtOrDefault(1)))" style="opacity: 1 !important;">Mer information</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card col-lg-3 col-md-3 col-sm-12  mx-5 p-0" style="width: 300px; height: 200px; background-color: black; opacity: 0.6">
+                        <h4 class="card-header" style="color: white">@AllEventsList.ElementAtOrDefault(2).EventName</h4>
+                        <div class="card-body py-0">
+                            <p class="my-4" style="color: white">@AllEventsList.ElementAtOrDefault(2).Date</p>
+                            <div class="my-1" style="text-align: center">
+                                <button class="btn btn-info" @onclick="(() => SetEventInFocusAndOpenEventModal(AllEventsList.ElementAtOrDefault(2)))" style="opacity: 1 !important;">Mer information</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+
+    </div>
+    <div style="display: block">
+
+        <div class="col-12 lineargradient" >
+            <h2 class="py-5 text-center" style="color: white; font-family: 'Poppins', sans-serif; letter-spacing: 25px;">EVENTS</h2>
+
+            <div class=" col-12">
+
+                <div class="row col-lg-12 justify-content-center">
+
+                    @if (AllEventsList is not null)
+                    {
+                        @foreach (var e in AllEventsList)
+                        {
+
+                            <div @onclick="(() => SetEventInFocusAndOpenEventModal(e))" class="card col-lg-6 col-md-6 col-sm-12 p-0 m-5 justify-content-between" style="cursor: pointer; height: 400px; width: 400px; background-color: black; opacity: 0.6;">
+                                <img class="card-img-top" src="@e.ImageData" />
+                                <div class="card-body p-0 position-relative">
+                                    <h3 style="display: inline; color: white;" class="card-header position-absolute bottom-0 start-0">@e.EventName</h3>
+                                    <p style="display: inline; color: white" class="card-text position-absolute bottom-0 end-0 py-1 px-2">@e.Date</p>
+                                </div>
+                            </div>
+
+                        }
+                    }
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+<ModalDialog @ref="@EventModal" Title="@EventInFocus.EventName">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img class="img-fluid" src="@EventInFocus.ImageData" />
+            </div>
+            <div class="col">
+                <h1>@EventInFocus.EventName</h1>
+                <ul class="list-unstyled">
+                    <li>@EventInFocus.Date</li>
+                    <li>@($"{EventInFocus.Address}, {EventInFocus.PostalCode}, {EventInFocus.City}")</li>
+                    <li>Antal Platser: @EventInFocus.MaxAvailableSeats</li>
+                    <li>Åldersgräns: @EventInFocus.AgeRecommendation</li>
+                    <li>Allergier: @EventInFocus.Allergies</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>@EventInFocus.Description</p>
+            </div>
+            <div class="col">
+                <button @onclick="@(() => ApplicationModal.Open())" class="btn btn-primary">Anmälan</button>
+            </div>
+        </div>
+    </div>
+</ModalDialog>
+
+<ModalDialog @ref="@ApplicationModal" Title="@($"Bokning : {EventInFocus.EventName}")">
+    <EventApplicationForm CurrentEvent="@EventInFocus"/>
+</ModalDialog>

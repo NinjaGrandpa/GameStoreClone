@@ -1,0 +1,40 @@
+﻿<li class="nav-item dropdown px-3">
+    <button class="btn btn-link nav-link dropdown-toggle @ShowDropdown"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            @onclick="@(ToggleDropdown)"
+            @onfocusout="@(async () => await HandleFocusOut())"
+            role="link">
+        <span class="@Icon" aria-hidden="true"></span>@Title
+    </button>
+    <ul class="dropdown-menu dropdown-menu-dark @ShowDropdown">
+        @ChildContent
+    </ul>
+</li>
+
+@code {
+    [Parameter]
+    public string? Icon { get; set; }
+
+    [Parameter]
+    public string Title { get; set; } = "Title";
+
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+
+    private bool _showDropdown = false;
+
+    private string? ShowDropdown => _showDropdown ? "show" : null;
+
+
+    private void ToggleDropdown()
+    {
+        _showDropdown = !_showDropdown;
+    }
+
+    private async Task HandleFocusOut()
+    {
+        await Task.Delay(200);
+        _showDropdown = false;
+    }
+}

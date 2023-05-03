@@ -1,0 +1,28 @@
+﻿@using GameStore.Client.HttpClientFolder
+@inject PublicClient _client
+
+<div class="text-bg-dark offcanvas offcanvas-end" id="offcanvasId">
+    <div class="offcanvas-header">
+        <h1 class="offcanvas-title">Cart</h1>
+        <button
+            type="button"
+            class="btn-close btn-close-white text-reset"
+            data-bs-dismiss="offcanvas"
+        ></button>
+    </div>
+    <div class="offcanvas-body container">
+        <div id="cartContainer"></div>
+
+        <div
+            class="container d-flex align-items-center justify-content-between"
+        >
+            <button class="btn btn-primary" type="button">
+                <span class="bi bi-basket"></span>
+                Checkout
+                <span class="bi bi-basket"></span>
+            </button>
+            <h1 class="h5">Total: <span id="cartTotal">0</span> Kr</h1>
+        </div>
+    </div>
+</div>
+

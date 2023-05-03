@@ -1,0 +1,50 @@
+﻿@using System.Globalization;
+@using GameStore.Client.HttpClientFolder
+@using GameStore.Shared.DTO;
+
+@inject PublicClient _client;
+
+
+<div id="cardz" class="card bg-transparent shadow-none border-0 mx-4">
+    <img src="@ImageUrl" class="card-img-top img-fluid mt-3 p-4">
+
+    <div class="card-body">
+
+        <h6 class="card-title text-center mb-2" style="color: white; font-family: 'Poppins', sans-serif;">
+
+            <span data-toggle="tooltip" data-placement="top" title="@Title">@TruncateTitle(Title)</span>
+        </h6>
+
+        <p class="card-text text-center text-muted" style="color: white; font-family: 'Poppins', sans-serif;">@Manufacturer</p>
+    </div>
+
+    <div class="card-footer bg-transparent d-flex justify-content-between align-items-center px-3">
+        
+        <p class="card-text text-center mt-4 font-weight-bold" style="color: white; font-family: 'Poppins', sans-serif;">@Price.ToString("C", CultureInfo.CurrentCulture)</p>
+        <button class="btn btn-outline-light "
+                style="color: white; font-family: 'Poppins', sans-serif; letter-spacing: 2px; border-radius: 0px; opacity: 1 !important;"
+                @onclick="(()=>OnOpenProductModal())">
+            KÖP
+        </button>
+
+
+    </div>
+</div>
+
+
+<style>
+    #cardz:hover {
+        box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .tooltip-inner {
+        background-color: black;
+        color: white;
+        border: none;
+    }
+
+    /* Style for the arrow */
+    .tooltip .arrow::before {
+        border-top-color: black;
+    }
+</style>

@@ -1,0 +1,177 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\obj\\Debug\\net7.0\\build-gz\\o7rPEIV0.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\obj\\Debug\\net7.0\\scopedcss\\bundle\\GameStore.Client.styles.css",
+      "PackagePath": "staticwebassets\\GameStore.Client.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\obj\\Debug\\net7.0\\service-worker-assets.js",
+      "PackagePath": "staticwebassets\\service-worker-assets.js"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\obj\\Debug\\net7.0\\service-worker\\service-worker.published.js",
+      "PackagePath": "staticwebassets\\service-worker.js"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\wwwroot\\Fonts\\HelveticaNeue.ttf",
+      "PackagePath": "staticwebassets\\Fonts\\HelveticaNeue.ttf"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\wwwroot\\Images\\BgLanSida.png",
+      "PackagePath": "staticwebassets\\Images\\BgLanSida.png"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\wwwroot\\Images\\Games\\Red-Dead-Redemption-2.png",
+      "PackagePath": "staticwebassets\\Images\\Games\\Red-Dead-Redemption-2.png"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\wwwroot\\Images\\age-of-empires-definitive-edition-windows-10_large.png",
+      "PackagePath": "staticwebassets\\Images\\age-of-empires-definitive-edition-windows-10_large.png"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\wwwroot\\Images\\best-online-games-for-pc@1x.png",
+      "PackagePath": "staticwebassets\\Images\\best-online-games-for-pc@1x.png"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\wwwroot\\Images\\bgcyberpunkgirl.png",
+      "PackagePath": "staticwebassets\\Images\\bgcyberpunkgirl.png"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\wwwroot\\Images\\bgindex.png",
+      "PackagePath": "staticwebassets\\Images\\bgindex.png"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\wwwroot\\Images\\bgsvart.png",
+      "PackagePath": "staticwebassets\\Images\\bgsvart.png"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\wwwroot\\Images\\file-g--med-i-den-ultimata-spelutmaningen----d-r-den-riktiga-str@1x.png",
+      "PackagePath": "staticwebassets\\Images\\file-g--med-i-den-ultimata-spelutmaningen----d-r-den-riktiga-str@1x.png"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\wwwroot\\Images\\gamestation.png",
+      "PackagePath": "staticwebassets\\Images\\gamestation.png"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\wwwroot\\Images\\godofwar.png",
+      "PackagePath": "staticwebassets\\Images\\godofwar.png"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\wwwroot\\Images\\keyboard.png",
+      "PackagePath": "staticwebassets\\Images\\keyboard.png"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\wwwroot\\Images\\logga.svg",
+      "PackagePath": "staticwebassets\\Images\\logga.svg"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\wwwroot\\Images\\logga@1x.png",
+      "PackagePath": "staticwebassets\\Images\\logga@1x.png"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\wwwroot\\Images\\mouse.png",
+      "PackagePath": "staticwebassets\\Images\\mouse.png"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\wwwroot\\Images\\reddeadredemption2.png",
+      "PackagePath": "staticwebassets\\Images\\reddeadredemption2.png"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\wwwroot\\Images\\residentevil4.png",
+      "PackagePath": "staticwebassets\\Images\\residentevil4.png"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\wwwroot\\icon-512.png",
+      "PackagePath": "staticwebassets\\icon-512.png"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\MaxJenslöv-NET22GBG\\source\\repos\\Game Store\\GameStore\\Client\\wwwroot\\manifest.json",
+      "PackagePath": "staticwebassets\\manifest.json"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.GameStore.Client.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.GameStore.Client.props",
+      "PackagePath": "build\\GameStore.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.GameStore.Client.props",
+      "PackagePath": "buildMultiTargeting\\GameStore.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.GameStore.Client.props",
+      "PackagePath": "buildTransitive\\GameStore.Client.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
