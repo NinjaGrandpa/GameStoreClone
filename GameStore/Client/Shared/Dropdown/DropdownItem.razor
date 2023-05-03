@@ -1,0 +1,17 @@
+﻿<li class="dropdown-item nav-item">
+    <NavLink class="nav-link" href="@NavLinkHref">
+        <span class="@Icon" aria-hidden="true"></span> @Title
+    </NavLink>
+</li>
+
+@code {
+
+    [Parameter]
+    public string Title { get; set; } = "Title";
+
+    [Parameter]
+    public string? Icon { get; set; }
+
+    [Parameter]
+    public string NavLinkHref { get; set; }
+}

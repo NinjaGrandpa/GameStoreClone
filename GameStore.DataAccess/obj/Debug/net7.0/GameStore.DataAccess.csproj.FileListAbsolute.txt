@@ -1,0 +1,17 @@
+C:\Users\MaxJenslöv-NET22GBG\Source\Repos\Game Store\GameStore.DataAccess\bin\Debug\net7.0\GameStore.DataAccess.deps.json
+C:\Users\MaxJenslöv-NET22GBG\Source\Repos\Game Store\GameStore.DataAccess\bin\Debug\net7.0\GameStore.DataAccess.runtimeconfig.json
+C:\Users\MaxJenslöv-NET22GBG\Source\Repos\Game Store\GameStore.DataAccess\bin\Debug\net7.0\GameStore.DataAccess.dll
+C:\Users\MaxJenslöv-NET22GBG\Source\Repos\Game Store\GameStore.DataAccess\bin\Debug\net7.0\GameStore.DataAccess.pdb
+C:\Users\MaxJenslöv-NET22GBG\Source\Repos\Game Store\GameStore.DataAccess\bin\Debug\net7.0\GameStore.Shared.dll
+C:\Users\MaxJenslöv-NET22GBG\Source\Repos\Game Store\GameStore.DataAccess\bin\Debug\net7.0\GameStore.Shared.pdb
+C:\Users\MaxJenslöv-NET22GBG\Source\Repos\Game Store\GameStore.DataAccess\obj\Debug\net7.0\GameStore.DataAccess.csproj.AssemblyReference.cache
+C:\Users\MaxJenslöv-NET22GBG\Source\Repos\Game Store\GameStore.DataAccess\obj\Debug\net7.0\GameStore.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MaxJenslöv-NET22GBG\Source\Repos\Game Store\GameStore.DataAccess\obj\Debug\net7.0\GameStore.DataAccess.AssemblyInfoInputs.cache
+C:\Users\MaxJenslöv-NET22GBG\Source\Repos\Game Store\GameStore.DataAccess\obj\Debug\net7.0\GameStore.DataAccess.AssemblyInfo.cs
+C:\Users\MaxJenslöv-NET22GBG\Source\Repos\Game Store\GameStore.DataAccess\obj\Debug\net7.0\GameStore.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\MaxJenslöv-NET22GBG\Source\Repos\Game Store\GameStore.DataAccess\obj\Debug\net7.0\GameStore.DataAccess.csproj.CopyComplete
+C:\Users\MaxJenslöv-NET22GBG\Source\Repos\Game Store\GameStore.DataAccess\obj\Debug\net7.0\GameStore.DataAccess.dll
+C:\Users\MaxJenslöv-NET22GBG\Source\Repos\Game Store\GameStore.DataAccess\obj\Debug\net7.0\refint\GameStore.DataAccess.dll
+C:\Users\MaxJenslöv-NET22GBG\Source\Repos\Game Store\GameStore.DataAccess\obj\Debug\net7.0\GameStore.DataAccess.pdb
+C:\Users\MaxJenslöv-NET22GBG\Source\Repos\Game Store\GameStore.DataAccess\obj\Debug\net7.0\GameStore.DataAccess.genruntimeconfig.cache
+C:\Users\MaxJenslöv-NET22GBG\Source\Repos\Game Store\GameStore.DataAccess\obj\Debug\net7.0\ref\GameStore.DataAccess.dll

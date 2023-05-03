@@ -1,0 +1,43 @@
+﻿@page "/admin/order"
+@using GameStore.Shared.Cascade;
+@using GameStore.Shared.DTO;
+@using System.Collections;
+@using GameStore.Client.HttpClientFolder;
+@using Microsoft.AspNetCore.Authorization;
+
+@attribute [Authorize(Roles = "Administrator")]
+@inject PublicClient _client;
+
+<h3>Alla event ordrar</h3>
+
+
+@if (AllEventOrders != null && AllEventOrders.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Kund id</th>
+                <th>Namn</th>
+                <th>Email</th>
+                <th> </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var _order in AllEventOrders)
+            {
+                <tr>
+                    <td>@_order.Id</td>
+                    <td>@_order.CustomerId</td>
+                    <td>@_order.FirstName @_order.LastName</td>
+                    <td>@_order.Email</td>
+                    <td><a href="" @onclick="(() => ChangeIdToSelectedOrder(_order.Id))" class=" btn btn-dark">Se alla uppgifter</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Laddar in alla event ordrar...</p>
+}

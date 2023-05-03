@@ -1,0 +1,519 @@
+@import '_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css';
+
+/* /Pages/AdminTools/ProductAdminPage.razor.rz.scp.css */
+/* Fix height and enable scrolling */
+
+.product-image[b-8lpthxvgno] {
+    width: 2rem;
+    height: 1.5rem;
+    margin: auto;
+}
+
+
+.grid[b-8lpthxvgno] {
+    height: 25rem;
+    overflow-y: auto;
+}
+
+.grid[b-8lpthxvgno]  table {
+    min-width: 100%;
+}
+
+/* Sticky header while scrolling */
+[b-8lpthxvgno] thead {
+    position: sticky;
+    top: 0;
+    background-color: #d8d8d8;
+    outline: 1px solid gray;
+    z-index: 1;
+}
+
+/* For virtualized grids, it's essential that all rows have the same known height */
+[b-8lpthxvgno] tr {
+    height: 30px;
+    border-bottom: 0.5px solid silver;
+}
+
+[b-8lpthxvgno] tbody td {
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 0;
+    text-overflow: ellipsis;
+}
+/* /Pages/EventPages/EventPage.Razor.rz.scp.css */
+body[b-mzd7qsv7jx] {
+    height: 600px;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 500px 100px;
+    grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+div#carousel[b-mzd7qsv7jx] {
+    grid-row: 1 / 2;
+    grid-column: 1 / 8;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    --items: 3;
+    --middle: 3;
+    --position: 2;
+    pointer-events: none;
+}
+
+div.item[b-mzd7qsv7jx] {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    --r: calc(var(--position) - var(--offset));
+    --abs: max(calc(var(--r) * -1), var(--r));
+    transition: all 0.25s linear;
+    transform: rotateY(calc(-10deg * var(--r))) translateX(calc(-300px * var(--r)));
+    z-index: calc((var(--position) - var(--abs)));
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+div.item:nth-of-type(1)[b-mzd7qsv7jx] {
+    --offset: 1;
+}
+
+div.item:nth-of-type(2)[b-mzd7qsv7jx] {
+    --offset: 2;
+}
+
+div.item:nth-of-type(3)[b-mzd7qsv7jx] {
+    --offset: 3;
+}
+
+div.item:nth-of-type(4)[b-mzd7qsv7jx] {
+    --offset: 4;
+}
+
+div.item:nth-of-type(5)[b-mzd7qsv7jx] {
+    --offset: 5;
+}
+
+input:nth-of-type(1)[b-mzd7qsv7jx] {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+input:nth-of-type(1):checked ~ div#carousel[b-mzd7qsv7jx] {
+    --position: 1;
+}
+
+input:nth-of-type(2)[b-mzd7qsv7jx] {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+input:nth-of-type(2):checked ~ div#carousel[b-mzd7qsv7jx] {
+    --position: 2;
+}
+
+input:nth-of-type(3)[b-mzd7qsv7jx] {
+    grid-column: 4 /5;
+    grid-row: 2 / 3;
+}
+
+input:nth-of-type(3):checked ~ div#carousel[b-mzd7qsv7jx] {
+    --position: 3;
+}
+
+input:nth-of-type(4)[b-mzd7qsv7jx] {
+    grid-column: 5 / 6;
+    grid-row: 2 / 3;
+}
+
+input:nth-of-type(4):checked ~ div#carousel[b-mzd7qsv7jx] {
+    --position: 4;
+}
+
+input:nth-of-type(5)[b-mzd7qsv7jx] {
+    grid-column: 6 / 7;
+    grid-row: 2 / 3;
+}
+
+input:nth-of-type(5):checked ~ div#carousel[b-mzd7qsv7jx] {
+    --position: 5;
+}
+/* /Pages/Index.razor.rz.scp.css */
+body[b-ye895cvxnf] {
+    height: 600px;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 500px 100px;
+    grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+div#carousel[b-ye895cvxnf] {
+    grid-row: 1 / 2;
+    grid-column: 1 / 8;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    --position: 1;
+    pointer-events: none;
+}
+
+div.item[b-ye895cvxnf] {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    --r: calc(var(--position) - var(--offset));
+    --abs: max(calc(var(--r) * -1), var(--r));
+    transition: all 0.25s linear;
+    transform: rotateY(calc(-10deg * var(--r))) translateX(calc(-300px * var(--r)));
+    z-index: calc((var(--position) - var(--abs)));
+}
+
+
+    div.item:nth-of-type(1)[b-ye895cvxnf] {
+        --offset: 1;
+    }
+
+    div.item:nth-of-type(2)[b-ye895cvxnf] {
+        --offset: 2;
+    }
+
+    div.item:nth-of-type(3)[b-ye895cvxnf] {
+        --offset: 3;
+    }
+
+    div.item:nth-of-type(4)[b-ye895cvxnf] {
+        --offset: 4;
+    }
+
+    div.item:nth-of-type(5)[b-ye895cvxnf] {
+        --offset: 5;
+    }
+
+input:nth-of-type(1)[b-ye895cvxnf] {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+    input:nth-of-type(1):checked ~ div#carousel[b-ye895cvxnf] {
+        --position: 1;
+    }
+
+input:nth-of-type(2)[b-ye895cvxnf] {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+    input:nth-of-type(2):checked ~ div#carousel[b-ye895cvxnf] {
+        --position: 2;
+    }
+
+input:nth-of-type(3)[b-ye895cvxnf] {
+    grid-column: 4 /5;
+    grid-row: 2 / 3;
+}
+
+    input:nth-of-type(3):checked ~ div#carousel[b-ye895cvxnf] {
+        --position: 3;
+    }
+
+input:nth-of-type(4)[b-ye895cvxnf] {
+    grid-column: 5 / 6;
+    grid-row: 2 / 3;
+}
+
+    input:nth-of-type(4):checked ~ div#carousel[b-ye895cvxnf] {
+        --position: 4;
+    }
+
+input:nth-of-type(5)[b-ye895cvxnf] {
+    grid-column: 6 / 7;
+    grid-row: 2 / 3;
+}
+
+    input:nth-of-type(5):checked ~ div#carousel[b-ye895cvxnf] {
+        --position: 5;
+    }
+
+/* /Pages/ProductPages/GamePage.razor.rz.scp.css */
+
+
+main.container[b-ycowo6l7al] {
+    margin: 0;
+}
+/* /Pages/ProductPages/Peripheral.razor.rz.scp.css */
+
+h5[b-zfw4vlwbm4] {
+    color:aqua;
+}
+
+/* /Shared/AdminLayout.razor.rz.scp.css */
+[b-165obxou9r] .page-title {
+    
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 25px;
+}
+/* /Shared/AdminSidebar.razor.rz.scp.css */
+.nav[b-8tf8p1qndk] {
+    background-image: linear-gradient(180deg,#1a4257 0%,#10162d 88.54%);
+}
+/* /Shared/Dropdown/Dropdown.razor.rz.scp.css */
+.btn:focus[b-gkfqiyi6x4] {
+    outline: none !important;
+    box-shadow: none !important;
+}
+/* /Shared/Footer.razor.rz.scp.css */
+body[b-6bqv2vh7os] {
+
+
+}
+
+.bindfooter[b-6bqv2vh7os] {
+    bottom: 0vh;
+    width: 100%;
+    position: relative;
+    z-index: 3 !important;
+    background-image: linear-gradient(#1a4257, #4AFEFC);
+}
+
+
+/* /Shared/MainLayout.razor.rz.scp.css */
+/* /Shared/NavMenu.razor.rz.scp.css */
+
+
+.navbar[b-qur9yx41nk] {
+    background-image: linear-gradient(180deg,#1a4257 0%,#10162d 88.54%);
+}
+/* /Shared/Policy.razor.rz.scp.css */
+.lineargradient[b-l515dw81ia] {
+    background-image: linear-gradient(180deg, #10162d 0%, #1a4257 88.54%);
+}
+
+
+p[b-l515dw81ia] {
+    color: white;
+}
+
+h1[b-l515dw81ia] {
+    color: white
+}
+
+h2[b-l515dw81ia] {
+    color: white
+}
+
+h3[b-l515dw81ia] {
+    color: White
+}
+
+h3[b-l515dw81ia] {
+    color: white
+}
+
+h4[b-l515dw81ia] {
+    color: white
+}
+
+h5[b-l515dw81ia] {
+    color: white
+}
+
+h6[b-l515dw81ia] {
+    color: white
+}
+/* /Shared/Refund.razor.rz.scp.css */
+.lineargradient[b-cv0vvqi7zq] {
+    background-image: linear-gradient(180deg, #10162d 0%, #1a4257 88.54%);
+}
+
+
+p[b-cv0vvqi7zq] {
+    color: white;
+}
+
+h1[b-cv0vvqi7zq] {
+    color: white
+}
+
+h2[b-cv0vvqi7zq] {
+    color: white
+}
+
+h3[b-cv0vvqi7zq] {
+    color: White  
+}
+
+h3[b-cv0vvqi7zq] {
+    color: white   
+}
+
+h4[b-cv0vvqi7zq] {
+    color: white
+}
+
+h5[b-cv0vvqi7zq] {
+    color: white
+}
+
+h6[b-cv0vvqi7zq] {
+    color: white
+}
+/* /Shared/ShippingPolicy.razor.rz.scp.css */
+.lineargradient[b-c9qoty10tj] {
+    background-image: linear-gradient(180deg, #10162d 0%, #1a4257 88.54%);
+}
+
+
+p[b-c9qoty10tj] {
+    color: white;
+}
+
+h1[b-c9qoty10tj] {
+    color: white
+}
+
+h2[b-c9qoty10tj] {
+    color: white
+}
+
+h3[b-c9qoty10tj] {
+    color: White
+}
+
+h3[b-c9qoty10tj] {
+    color: white
+}
+
+h4[b-c9qoty10tj] {
+    color: white
+}
+
+h5[b-c9qoty10tj] {
+    color: white
+}
+
+h6[b-c9qoty10tj] {
+    color: white
+}
+/* /Shared/TermsAndConditions.razor.rz.scp.css */
+.lineargradient[b-ejxu8dav3f] {
+    background-image: linear-gradient(180deg, #10162d 0%, #1a4257 88.54%);
+}
+
+
+p[b-ejxu8dav3f] {
+    color: white;
+}
+
+h1[b-ejxu8dav3f] {
+    color: white
+}
+
+h2[b-ejxu8dav3f] {
+    color: white
+}
+
+h3[b-ejxu8dav3f] {
+    color: White
+}
+
+h3[b-ejxu8dav3f] {
+    color: white
+}
+
+h4[b-ejxu8dav3f] {
+    color: white
+}
+
+h5[b-ejxu8dav3f] {
+    color: white
+}
+
+h6[b-ejxu8dav3f] {
+    color: white
+}
+/* /Shared/UserPolicy.razor.rz.scp.css */
+.lineargradient[b-et61w353c6] {
+    background-image: linear-gradient(180deg, #10162d 0%, #1a4257 88.54%);
+}
+
+
+p[b-et61w353c6] {
+    color: white;
+}
+
+h1[b-et61w353c6] {
+    color: white
+}
+
+h2[b-et61w353c6] {
+    color: white
+}
+
+h3[b-et61w353c6] {
+    color: White
+}
+
+h3[b-et61w353c6] {
+    color: white
+}
+
+h4[b-et61w353c6] {
+    color: white
+}
+
+h5[b-et61w353c6] {
+    color: white
+}
+h6[b-et61w353c6] {
+    color: white
+}
+/* /Shared/UserTerms.razor.rz.scp.css */
+.lineargradient[b-lygp9v5d4j] {
+    background-image: linear-gradient(180deg, #10162d 0%, #1a4257 88.54%);
+}
+
+
+p[b-lygp9v5d4j] {
+    color: white;
+}
+
+h1[b-lygp9v5d4j] {
+    color: white
+}
+
+h2[b-lygp9v5d4j] {
+    color: white
+}
+
+h3[b-lygp9v5d4j] {
+    color: White
+}
+
+h3[b-lygp9v5d4j] {
+    color: white
+}
+
+h4[b-lygp9v5d4j] {
+    color: white
+}
+
+h5[b-lygp9v5d4j] {
+    color: white
+}
+
+h6[b-lygp9v5d4j] {
+    color: white
+}

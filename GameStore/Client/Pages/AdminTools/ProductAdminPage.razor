@@ -1,0 +1,168 @@
+﻿@page "/admin/product"
+
+@using Microsoft.AspNetCore.Components.QuickGrid;
+@using Microsoft.AspNetCore.Authorization;
+@using GameStore.Client.HttpClientFolder;
+@using AutoMapper
+@using Duende.IdentityServer.EntityFramework.Entities
+@using System.Configuration
+
+@inject PublicClient _client
+@attribute [Authorize(Roles = "Administrator")]
+
+<PageTitle>Admin Tools : Produkter</PageTitle>
+
+<div class="container p-0">
+
+    <div class="col-12 lineargradient vh-100">
+
+        <h2 class="py-5 text-center page-title">PRODUKTER</h2>
+
+        <div class="grid bg-white" tabindex="-1">
+            <QuickGrid Items="@Products">
+                @*<TemplateColumn Align="Align.Center">
+                <img class="product-image" src="@(async () => await ConvertImage(context.ImageData))" alt="@(context.Name)" />
+                </TemplateColumn>*@
+                <PropertyColumn Property="@(p => p.Name)" Sortable="true" />
+                <PropertyColumn Property="@(p => p.AmountInStock)" Sortable="true" />
+                <PropertyColumn Property="@(p => p.UnitPrice)" Sortable="true" />
+                <PropertyColumn Property="@(p => p.Id)" />
+            </QuickGrid>
+        </div>
+
+        <button class="btn btn-primary" @onclick="@(() => ProductModal.Open())">Skapa Ny Produkt</button>
+
+        <ModalDialog @ref="ProductModal" Title="Skapa Produkt">
+            <EditForm Model="@NewProduct" OnSubmit="HandleSubmit">
+
+                <div class="form-group row">
+                    <label for="name" class="col-sm-2 col-form-label">
+                        Product Name
+                    </label>
+                    <div class="col-sm-10">
+                        <InputText id="name" class="form-control" placeholder="Produktnamn" @bind-Value="NewProduct.Name" />
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="manufacturer" class="col-sm-2 col-form-label">
+                        Tillverkare
+                    </label>
+                    <div class="col-sm-10">
+                        <InputText id="manufacturer" class="form-control" placeholder="Tillverkare" @bind-Value="NewProduct.Manufacturer" />
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="description" class="col-sm-2 col-form-label">
+                        Produktbeskrivning
+                    </label>
+                    <div class="col-sm-10">
+                        <InputText id="description" class="form-control" placeholder="Produktbeskrivning" @bind-Value="NewProduct.Description" />
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="unit-price" class="col-sm-2 col-form-label">
+                        Produktpris
+                    </label>
+                    <div class="col-sm-10">
+                        <InputNumber TValue="decimal" id="unit-price" class="form-control" placeholder="Produktpris" @bind-Value="NewProduct.UnitPrice" />
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="stock" class="col-sm-2 col-form-label">
+                        Lagersaldo
+                    </label>
+                    <div class="col-sm-10">
+                        <InputNumber TValue="int" id="stock" class="form-control" placeholder="Lagersaldo" @bind-Value="NewProduct.AmountInStock" />
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-10">
+
+                        <div class="dropdown">
+
+                            <button class="btn btn-link nav-link dropdown-toggle @ShowDropdown"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    @onclick="@(ToggleDropdown)"
+                                    @onfocusout="@(async () => await HandleFocusOut())"
+                                    role="link">
+                                <label class="col-sm-2 col-form-label">
+                                    Specifikationsgrupper
+                                </label>
+                            </button>
+
+                            <ul id="spec-group" class="dropdown-menu @ShowDropdown">
+                                <Virtualize Context="vContext" Items="SpecificationGroupList">
+
+                                    <li class="dropdown-item">@vContext.Title</li>
+
+                                </Virtualize>
+                            </ul>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Titel</span>
+                            <input class="form-control" @bind="NewSpecificationGroup.Title" />
+                            <button class="btn btn-primary" @onclick="AddSpecGroupToList"> Lägg till grupp</button>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-10">
+
+                                <div class="dropdown">
+                                    <button class="btn btn-link nav-link dropdown-toggle @ShowDropdown"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                            @onclick="@(ToggleDropdown)"
+                                            @onfocusout="@(async () => await HandleFocusOut())"
+                                            role="link">
+                                        <label class="col-sm-2 col-form-label">
+                                            Specifikationsgrupper
+                                        </label>
+                                    </button>
+
+                                    <ul id="spec-group" class="dropdown-menu @ShowDropdown">
+                                        <Virtualize Context="vContext" Items="SpecificationItemList">
+
+                                            <div class="row">
+
+                                                <div class="col-6">
+                                                    <li class="dropdown-item">@vContext.InformationType</li>
+                                                </div>
+
+                                                <div class="col-6">
+                                                    <li class="dropdown-item">@vContext.InformationValue</li>
+                                                </div>
+
+
+                                            </div>
+                                        </Virtualize>
+                                    </ul>
+                                </div>
+
+<div class="input-group mb-3">
+    <span class="input-group-text">Typ</span>
+    <input class="form-control" @bind="NewSpecificationItem.InformationType" />
+    <span class="input-group-text">Värde</span>
+    <input class="form-control" @bind="NewSpecificationItem.InformationValue" />
+    <button class="btn btn-primary" @onclick="AddSpecItemToList"> Lägg till värde</button>
+</div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+<button class="p-3 btn btn-primary">Lägg till Produkt</button>
+            </EditForm>
+        </ModalDialog>
+
+    </div>
+
+</div>

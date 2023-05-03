@@ -1,0 +1,17 @@
+C:\Users\MaxJenslöv-NET22GBG\source\repos\Game Store\GameStore.Service\bin\Debug\net7.0\GameStore.Service.deps.json
+C:\Users\MaxJenslöv-NET22GBG\source\repos\Game Store\GameStore.Service\bin\Debug\net7.0\GameStore.Service.dll
+C:\Users\MaxJenslöv-NET22GBG\source\repos\Game Store\GameStore.Service\bin\Debug\net7.0\GameStore.Service.pdb
+C:\Users\MaxJenslöv-NET22GBG\source\repos\Game Store\GameStore.Service\bin\Debug\net7.0\GameStore.DataAccess.dll
+C:\Users\MaxJenslöv-NET22GBG\source\repos\Game Store\GameStore.Service\bin\Debug\net7.0\GameStore.Shared.dll
+C:\Users\MaxJenslöv-NET22GBG\source\repos\Game Store\GameStore.Service\bin\Debug\net7.0\GameStore.DataAccess.pdb
+C:\Users\MaxJenslöv-NET22GBG\source\repos\Game Store\GameStore.Service\bin\Debug\net7.0\GameStore.Shared.pdb
+C:\Users\MaxJenslöv-NET22GBG\source\repos\Game Store\GameStore.Service\obj\Debug\net7.0\GameStore.Service.csproj.AssemblyReference.cache
+C:\Users\MaxJenslöv-NET22GBG\source\repos\Game Store\GameStore.Service\obj\Debug\net7.0\GameStore.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MaxJenslöv-NET22GBG\source\repos\Game Store\GameStore.Service\obj\Debug\net7.0\GameStore.Service.AssemblyInfoInputs.cache
+C:\Users\MaxJenslöv-NET22GBG\source\repos\Game Store\GameStore.Service\obj\Debug\net7.0\GameStore.Service.AssemblyInfo.cs
+C:\Users\MaxJenslöv-NET22GBG\source\repos\Game Store\GameStore.Service\obj\Debug\net7.0\GameStore.Service.csproj.CoreCompileInputs.cache
+C:\Users\MaxJenslöv-NET22GBG\source\repos\Game Store\GameStore.Service\obj\Debug\net7.0\GameStore.Service.csproj.CopyComplete
+C:\Users\MaxJenslöv-NET22GBG\source\repos\Game Store\GameStore.Service\obj\Debug\net7.0\GameStore.Service.dll
+C:\Users\MaxJenslöv-NET22GBG\source\repos\Game Store\GameStore.Service\obj\Debug\net7.0\refint\GameStore.Service.dll
+C:\Users\MaxJenslöv-NET22GBG\source\repos\Game Store\GameStore.Service\obj\Debug\net7.0\GameStore.Service.pdb
+C:\Users\MaxJenslöv-NET22GBG\source\repos\Game Store\GameStore.Service\obj\Debug\net7.0\ref\GameStore.Service.dll

@@ -1,0 +1,44 @@
+﻿@page "/admin/event"
+@using GameStore.Shared.Cascade;
+@using GameStore.Shared.DTO;
+@using System.Collections;
+@using GameStore.Client.HttpClientFolder;
+@using Microsoft.AspNetCore.Authorization;
+
+@attribute [Authorize(Roles = "Administrator")]
+@inject PublicClient _client;
+
+<h3>Alla aktuella event</h3>
+
+
+@if (AllEvents != null && AllEvents.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Event Namn</th>
+                <th>Datum</th>
+                <th> </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var _event in AllEvents)
+            {
+                <tr>
+                    <td>@_event.Id</td>
+                    <td>@_event.EventName</td>
+                    <td>@_event.Date.ToString("yyyy-MM-dd")</td>
+                    <td><a href="/Redigera-Event" @onclick="(() => ChangeIdToSelectedEvent(_event.Id))" class=" btn btn-dark">Redigera</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div>
+        <a class="btn btn-success" href="/Skapa-Event">Lägg till nytt event</a>
+    </div>
+}
+else
+{
+    <p>Laddar in alla events eller så finns det inga framtida events inlagda.</p>
+}

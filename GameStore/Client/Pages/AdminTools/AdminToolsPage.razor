@@ -1,0 +1,10 @@
+﻿@page "/admin"
+
+@using Microsoft.AspNetCore.Authorization;
+@attribute [Authorize(Roles = "Administrator")]
+
+<h1>Admin Tools</h1>
+
+@code {
+
+}

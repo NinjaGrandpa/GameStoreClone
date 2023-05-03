@@ -1,0 +1,54 @@
+﻿@inject PublicClient _client
+@inject AuthenticationStateProvider _authenticationStateProvider
+
+@page "/event/application"
+@using GameStore.Client.HttpClientFolder
+
+<EditForm Model="@CurrentEventOrder" OnValidSubmit="ApplyForEvent">
+
+    <h3 @bind="CurrentEvent.EventName"/>
+    <h4 @bind="CurrentEvent.Date"/>
+    <h4>Uppgifter för bokning till eventet</h4>
+
+    <div>
+        <label class="form-label">Förnamn:</label>
+        <InputText class="form-control" @bind-Value="CurrentEventOrder.FirstName" />
+    </div>
+    <div>
+        <label class="form-label">Efternamn:</label>
+        <InputText class="form-control" @bind-Value="CurrentEventOrder.LastName" />
+    </div>
+    <div>
+        <label class="form-label">Email:</label>
+        <InputText class="form-control" @bind-Value="CurrentEventOrder.Email"/>
+    </div>
+    <div>
+        <label class="form-label">Telefonnummer:</label>
+        <InputText class="form-control" @bind-Value="CurrentEventOrder.PhoneNumber" />
+    </div>
+    <div>
+        <label  class="form-label">Antal platser:</label>
+        <InputNumber class="form-control" @bind-Value="CurrentEventOrder.AmountOfSeats"/>
+    </div>
+    <div>
+        <label class="form-label">Allergier:</label>
+        <InputText class="form-control" @bind-Value="CurrentEventOrder.Allergies" />
+    </div>
+    
+    <div class="alert alert-danger alert-dismissible fade" hidden="@_showCheckboxAlert" role="alert">
+        <strong>Klicka i rutan</strong> om du vill kunna boka ett event
+        <button type="button" @onclick="@(() => _showCheckboxAlert = false)" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div class="form-check" hidden="@_isLoggedIn">
+        <input class="form-check-input" type="checkbox" @bind-value="_hasAgreedToSaveCustomerInformation" id="saveCustomerCheck">
+        <label class="form-check-label" for="saveCustomerCheck">
+            Vill du spara din information för framtida bokningar?
+        </label>
+    </div>
+
+    <button class="btn btn-success">Slutför bokning</button>
+
+</EditForm>

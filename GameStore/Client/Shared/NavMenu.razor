@@ -1,0 +1,80 @@
+﻿@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@using GameStore.Client.Shared.Dropdown;
+@using GameStore.Shared.DataModels.Products
+@using GameStore.Shared.DTO
+
+<nav class="navbar navbar-expand-md navbar-dark mb-0 position-sticky" style="z-index:3!important;">
+
+    <div class="container-fluid">
+        <button class="navbar-toggler @NavButtonCssClass" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-label="Toggle navigation" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+            <img src="Images/logga@1x.png" height="100" />
+        </NavLink>
+        <div class="collapse navbar-collapse @NavBarCssClass" id="navbarCollapse" @onclick="ToggleNavMenu">
+            <ul class="align-middle navbar-nav ms-auto mb-2 mb-md-0">
+
+                <AuthorizeView>
+                    <Authorized>
+
+                        <Dropdown Icon="oi oi-wrench" Title="Admin Tools">
+                            <DropdownItem Title="Events" NavLinkHref="admin/event"></DropdownItem>
+                            <DropdownItem Title="Produkter" NavLinkHref="admin/product"></DropdownItem>
+                            <DropdownItem Title="Order" NavLinkHref="admin/order"></DropdownItem>
+                            <DropdownItem Title="Användare" NavLinkHref="admin/user"></DropdownItem>
+                            <DropdownItem Title="Kundkorgar" NavLinkHref="admin/cart"></DropdownItem>
+                            <DropdownItem Title="Highlights" NavLinkHref="admin/highlight"></DropdownItem>
+                        </Dropdown>
+
+                    </Authorized>
+                </AuthorizeView>
+                
+                <LoginDisplay />
+
+                <li class="nav-item px-3">
+                    <NavLink class="nav-link">
+                        <span class="oi oi-cart"></span>
+                        <div class="dropdown">  
+                            @foreach (var item in CurrentCart.CartDetails)
+                            {
+                                <div class="dropdown-item">
+                                    <p>@item.Id</p>
+                                    <p>@item.OrderDetailsCost</p>
+                                    <p>@item.ProductId</p>
+                                    <ps>@item.Quantity</ps>
+                                </div>
+                            }
+                        </div>
+                    </NavLink>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+@code {
+    private bool collapseNavMenu = true;
+    private bool _showDropdown = false;
+
+    private string? NavBarCssClass => collapseNavMenu ? null : "show";
+    private string? NavButtonCssClass => collapseNavMenu ? "collapsed" : null;
+    private string? ShowDropdown => _showDropdown ? "show" : null;
+
+    public CartDto CurrentCart { get; set; } = new CartDto();
+
+    public OffcanvasCart? OffcanvasCart { get; set; }
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+
+    private void ToggleDropdown()
+    {
+        _showDropdown = !_showDropdown;
+    }
+
+}

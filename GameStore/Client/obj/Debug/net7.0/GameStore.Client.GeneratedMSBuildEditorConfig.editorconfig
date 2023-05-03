@@ -1,0 +1,181 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = GameStore.Client
+build_property.RootNamespace = GameStore.Client
+build_property.ProjectDir = C:\Users\MaxJenslöv-NET22GBG\source\repos\Game Store\GameStore\Client\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\MaxJenslöv-NET22GBG\source\repos\Game Store\GameStore\Client
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Pages/AdminTools/AdminToolsPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5Ub29sc1xBZG1pblRvb2xzUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Pages/AdminTools/Event/CreateNewEvent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5Ub29sc1xFdmVudFxDcmVhdGVOZXdFdmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Pages/AdminTools/Event/EditEvent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5Ub29sc1xFdmVudFxFZGl0RXZlbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Pages/AdminTools/Event/EventAdminPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5Ub29sc1xFdmVudFxFdmVudEFkbWluUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Pages/AdminTools/Highlight/CreateNewHighlight.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5Ub29sc1xIaWdobGlnaHRcQ3JlYXRlTmV3SGlnaGxpZ2h0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Pages/AdminTools/Highlight/HighlightAdminPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5Ub29sc1xIaWdobGlnaHRcSGlnaGxpZ2h0QWRtaW5QYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Pages/AdminTools/Order/OrderAdminPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5Ub29sc1xPcmRlclxPcmRlckFkbWluUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Pages/AdminTools/StartedShoppingCarts/CartsAdminPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5Ub29sc1xTdGFydGVkU2hvcHBpbmdDYXJ0c1xDYXJ0c0FkbWluUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Pages/AdminTools/User/UserAdminPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5Ub29sc1xVc2VyXFVzZXJBZG1pblBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Pages/AdminTools/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5Ub29sc1xfSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Pages/Authentication.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aGVudGljYXRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Pages/EventPages/EventApplicationForm.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXZlbnRQYWdlc1xFdmVudEFwcGxpY2F0aW9uRm9ybS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Pages/Payment/PaymentPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF5bWVudFxQYXltZW50UGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Shared/AdminToolsMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEFkbWluVG9vbHNNZW51LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Shared/Dropdown/DropdownItem.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERyb3Bkb3duXERyb3Bkb3duSXRlbS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Shared/LoginDisplay.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luRGlzcGxheS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Shared/ModalDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1vZGFsRGlhbG9nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Shared/OffcanvasCart.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE9mZmNhbnZhc0NhcnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Shared/Peripheral/ProductCard.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFBlcmlwaGVyYWxcUHJvZHVjdENhcmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Shared/RedirectToLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFJlZGlyZWN0VG9Mb2dpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Pages/AdminTools/ProductAdminPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5Ub29sc1xQcm9kdWN0QWRtaW5QYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-8lpthxvgno
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Pages/EventPages/EventPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXZlbnRQYWdlc1xFdmVudFBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-mzd7qsv7jx
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-ye895cvxnf
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Pages/ProductPages/GamePage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFBhZ2VzXEdhbWVQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-ycowo6l7al
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Pages/ProductPages/Peripheral.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFBhZ2VzXFBlcmlwaGVyYWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-zfw4vlwbm4
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Shared/AdminLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEFkbWluTGF5b3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-165obxou9r
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Shared/AdminSidebar.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEFkbWluU2lkZWJhci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-8tf8p1qndk
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Shared/Dropdown/Dropdown.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERyb3Bkb3duXERyb3Bkb3duLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-gkfqiyi6x4
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Shared/Footer.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEZvb3Rlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-6bqv2vh7os
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-mw8uhzwxm9
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-qur9yx41nk
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Shared/Policy.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFBvbGljeS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-l515dw81ia
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Shared/Refund.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFJlZnVuZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-cv0vvqi7zq
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Shared/ShippingPolicy.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFNoaXBwaW5nUG9saWN5LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-c9qoty10tj
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Shared/TermsAndConditions.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFRlcm1zQW5kQ29uZGl0aW9ucy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-ejxu8dav3f
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Shared/UserPolicy.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFVzZXJQb2xpY3kucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-et61w353c6
+
+[C:/Users/MaxJenslöv-NET22GBG/source/repos/Game Store/GameStore/Client/Shared/UserTerms.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFVzZXJUZXJtcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-lygp9v5d4j
